@@ -1,0 +1,11 @@
+# Host de la base de datos
+HOST=
+
+# Nombre de la base de datos
+DATABASE=
+
+# Usuario de la base de datos
+USERNAME=
+
+# Contraseña de la base de datos
+PASSWORD=
