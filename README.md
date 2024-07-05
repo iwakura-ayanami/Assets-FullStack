@@ -1,6 +1,6 @@
 # Prueba Técnica Assets
 
-Este proyecto consiste en un Sistema de Gestión de Pagos compuesto por un backend en Django y un frontend en React.
+Este proyecto consiste en una aplicacion Full Stack de un Sistema de Gestión de Pagos compuesto por un backend en Django y un frontend en React.
 
 ## Resumen
 
