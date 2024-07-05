@@ -1,6 +1,6 @@
 # Sistema de Gestión de Pagos - Frontend
 
-Este proyecto la aplicación Frontend para un visualizar un Sistema de Gestión de Pagos, desarrollada con React y Bootstrap. Permite visualizar clientes, gestores, pagos y estadísticas relacionadas. De un Backend construido con Django.
+Este proyecto es la aplicación Frontend para un visualizar un Sistema de Gestión de Pagos, desarrollada con React y Bootstrap. Permite visualizar clientes, gestores, pagos y estadísticas relacionadas. De un Backend construido con Django.
 
 ## Características
 

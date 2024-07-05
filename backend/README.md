@@ -1,6 +1,6 @@
 # Sistema de Gestión de Pagos - Backend
 
-Este proyecto la aplicación Backend para un Sistema de Gestión de Pagos, desarrollada con Django y Django REST Framework. Proporciona una API REST para manejar clientes, gestores y pagos, y se conecta a una base de datos PostgreSQL para cargar datos iniciales en una base de datos SQLite local.
+Este proyecto es la aplicación Backend para un Sistema de Gestión de Pagos, desarrollada con Django y Django REST Framework. Proporciona una API REST para manejar clientes, gestores y pagos, y se conecta a una base de datos PostgreSQL para cargar datos iniciales en una base de datos SQLite local.
 
 ## Características
 
