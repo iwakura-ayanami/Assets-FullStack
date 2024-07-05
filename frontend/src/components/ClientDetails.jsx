@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { Card, ListGroup } from 'react-bootstrap';
 import { getGestores, getPagos } from '../services/api';
 
 const ClientDetails = ({ clientId }) => {
@@ -26,18 +27,22 @@ const ClientDetails = ({ clientId }) => {
     .reduce((sum, pago) => sum + pago.abonos, 0);
 
   return (
-    <div>
-      <h2>Detalles del Cliente</h2>
-      <h3>Gestores y Montos:</h3>
-      <ul>
-        {montoPorGestor.map(gestor => (
-          <li key={gestor.id}>
-            {gestor.nombre}: ${gestor.montoTotal}
-          </li>
-        ))}
-      </ul>
-      <h3>Abono Total: ${abonoTotal}</h3>
-    </div>
+    <Card>
+      <Card.Body>
+        <Card.Title>Detalles del Cliente</Card.Title>
+        <Card.Subtitle className="mb-2 text-muted">Gestores y Montos:</Card.Subtitle>
+        <ListGroup variant="flush">
+          {montoPorGestor.map(gestor => (
+            <ListGroup.Item key={gestor.id}>
+              {gestor.nombre}: ${gestor.montoTotal}
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+        <Card.Text className="mt-3">
+          <strong>Abono Total:</strong> ${abonoTotal}
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 

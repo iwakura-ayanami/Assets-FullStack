@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { ListGroup } from 'react-bootstrap';
 import { getClientes } from '../services/api';
 
 const ClientList = ({ onSelectClient }) => {
@@ -10,14 +11,18 @@ const ClientList = ({ onSelectClient }) => {
 
   return (
     <div>
-      <h2>Clientes</h2>
-      <ul>
+      <h2 className="mb-3">Clientes</h2>
+      <ListGroup>
         {clients.map(client => (
-          <li key={client.id} onClick={() => onSelectClient(client.id)}>
+          <ListGroup.Item 
+            key={client.id} 
+            action 
+            onClick={() => onSelectClient(client.id)}
+          >
             {client.nombre}
-          </li>
+          </ListGroup.Item>
         ))}
-      </ul>
+      </ListGroup>
     </div>
   );
 };
